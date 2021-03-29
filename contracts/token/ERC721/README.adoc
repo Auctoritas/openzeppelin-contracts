@@ -1,6 +1,6 @@
-= ERC 721
+= INSTIGATORS ERC 721
 
-INSTIGATORS ERC-721 Compliant Token with additional functionality and focus on Digital Art (Work In Progress)
+INSTIGATORS ERC 721 is an ERC-721 Compliant Token with additional functionality and focus on Digital Art (Work In Progress)
 
 This set of interfaces, contracts, and utilities are all related to the https://eips.ethereum.org/EIPS/eip-721[ERC721 Non-Fungible Token Standard].
 
