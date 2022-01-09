@@ -7,10 +7,23 @@ pragma solidity ^0.8.0;
  */
 library Strings {
     bytes16 private constant alphabet = "0123456789abcdef";
+/*
+    function toString(uint256 value, uint256 len) internal pure returns (string memory) {
 
-    /**
-     * @dev Converts a `uint256` to its ASCII `string` decimal representation.
-     */
+        bytes memory buffer = new bytes(len);
+        for(uint256 k = 0; k < len; k++)
+            buffer[len-1-k] = bytes1(uint8(48 + uint256(value % 10)));
+        
+        while (value != 0) {
+            digits -= 1;
+            buffer[digits] = bytes1(uint8(48 + uint256(value % 10)));
+            value /= 10;
+        }
+        return string(buffer);
+    }
+*/
+    
+    /*** @dev Converts a `uint256` to its ASCII `string` decimal representation. */
     function toString(uint256 value) internal pure returns (string memory) {
         // Inspired by OraclizeAPI's implementation - MIT licence
         // https://github.com/oraclize/ethereum-api/blob/b42146b063c7d6ee1358846c198246239e9360e8/oraclizeAPI_0.4.25.sol
