@@ -1,15 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-import "../openzeppelin-contracts/contracts/token/ERC721/IERC721.sol";
-import "../openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol";
-import "../openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol";
-import "../openzeppelin-contracts/contracts/utils/Address.sol";
-import "../openzeppelin-contracts/contracts//utils/Strings.sol";
-import "../openzeppelin-contracts/contracts/utils/introspection/ERC165.sol";
-import "../openzeppelin-contracts/contracts/utils/Context.sol";
-/*
+import "https://github.com/Auctoritas/openzeppelin-contracts/blob/main/contracts/token/ERC721/IERC721.sol";
+import "https://github.com/Auctoritas/openzeppelin-contracts/blob/main/contracts/token/ERC721/IERC721Receiver.sol";
+import "https://github.com/Auctoritas/openzeppelin-contracts/blob/main/contracts/token/ERC721/extensions/IERC721Metadata.sol";
+import "https://github.com/Auctoritas/openzeppelin-contracts/blob/main/contracts/utils/Address.sol";
+import "https://github.com/Auctoritas/openzeppelin-contracts/blob/main/contracts//utils/Strings.sol";
+import "https://github.com/Auctoritas/openzeppelin-contracts/blob/main/contracts/utils/introspection/ERC165.sol";
+import "https://github.com/Auctoritas/openzeppelin-contracts/blob/main/contracts/utils/Context.sol";
+/* 
 Deployed on Polygon Matic Network:
-v0.0 0x4aA1013526BCC68426f188E9ebe5A6FB6E360e90
 v1.0 0x9b240738ddd03e349c49a1a7d21003d658f121c8
 */
 
