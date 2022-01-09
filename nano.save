@@ -1,0 +1,507 @@
+commit 1961d524058544a3d60a09bc185f7f7b63e825f6 Author: Auctoritas <ss2210@gmail.com> Date: Mon Jan 10 02:13:54 2022 +0300 wip commit 
+fb25e39369eef9a8b7651d94da65001ff6d6ff69 Author: Auctoritas <ss2210@gmail.com> Date: Mon Jan 10 02:12:42 2022 +0300
+    wip commit db37d6e62f7001cce3d8d98363512295678e87b1 Author: Auctoritas <ss2210@gmail.com> Date: Mon Jan 10 02:11:36 2022 +0300 wip commit 
+adbc7c6162ec029e4552eebc01c82c3b283598b2 Author: Auctoritas <ss2210@gmail.com> Date: Mon Jan 10 01:57:16 2022 +0300
+    wip commit 554a734d82e3e977fea644959ac5cec371c2e43e Author: Auctoritas <ss2210@gmail.com> Date: Mon Jan 10 01:46:09 2022 +0300 wip commit 
+243adff49ce1700e0ecb99fe522fb16cff1d1ddc Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Fri Mar 26 14:06:58 2021 +0100
+    fix typo in ERC20's documentation commit 378531b70906c906461fa14e5631f0569b938257 Author: Hadrien Croubois <hadrien.croubois@gmail.com> 
+Date: Tue Mar 23 16:28:01 2021 +0100
+    Fix merge issue in CHANGELOG.md commit 9584c235940593d1eb1ea4052695e51a6071b43a Author: Francisco Giordano <frangio.1@gmail.com> Date: Tue 
+Mar 23 12:19:17 2021 -0300
+    Update package-lock.json commit 64f20ec62402c1c0e7056e8c1c2840481a6a90b1 Author: Francisco Giordano <frangio.1@gmail.com> Date: Tue Mar 23 
+12:15:21 2021 -0300
+    Fix release.sh for npm 7 commit 783e928ae8b73ac921a4643394b781b833703989 Merge: a3712a32 a673994d Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Tue Mar 23 12:13:57 2021 -0300
+    Merge branch 'release-v4.0' commit a673994de5eba4305cefb8ae98ea9ad37a43efaa Author: Francisco Giordano <frangio.1@gmail.com> Date: Tue Mar 
+23 12:06:54 2021 -0300
+    4.0.0 commit 9b0e27c98c48b00a9de35def23c0c242a2e4c1e6 Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Mon Mar 22 18:07:02 2021 
++0100
+    add missing rewrite rule in scripts/migrate-imports.js
+    
+    (cherry picked from commit a3712a32881a0815253af0d2e43f89d68097385b) commit a3712a32881a0815253af0d2e43f89d68097385b Author: Hadrien 
+Croubois <hadrien.croubois@gmail.com> Date: Mon Mar 22 18:07:02 2021 +0100
+    add missing rewrite rule in scripts/migrate-imports.js commit 74e03de7604ca99c2f8e476476a6dc362779c356 Author: Julian M. Rodriguez 
+<56316686+julianmrodri@users.noreply.github.com> Date: Sun Mar 21 15:22:45 2021 -0300
+    removes unused dependency (#2603) commit 09e302384a3c77be1b482b18a4e30f88630cfd66 Author: renovate[bot] 
+<29139614+renovate[bot]@users.noreply.github.com> Date: Tue Mar 16 16:07:24 2021 -0300
+    Update lockfile (#2592)
+    
+    Co-authored-by: Renovate Bot <bot@renovateapp.com> commit 3dc374ddcf46739185bd12759eaa826b579e5a0a Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Tue Mar 16 19:32:22 2021 +0100
+    Make overide of ERC721.isApprovedForAll affect the ERC721 logic (#2597) commit 90a72f9acd832793b7dc2d916e4c30e9a5677190 Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Mon Mar 15 16:47:39 2021 -0300
+    Fix ERC721URIStorage in documentation
+    
+    (cherry picked from commit 7c1625b0e024e90415d705d4323c85fbc6ea993c) commit 7c1625b0e024e90415d705d4323c85fbc6ea993c Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Mon Mar 15 16:47:39 2021 -0300
+    Fix ERC721URIStorage in documentation commit cd443f0d5b25487b8cf614cf717a4d22fe9c3c63 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Mon Mar 15 17:01:47 2021 +0100
+    Add tests to extend code coverage (#2586) commit d5194725b7634fb12947dabf35fc58796180ba2e Author: Reason <apple.lrs@gmail.com> Date: Sat 
+Mar 13 17:19:29 2021 +0800
+    Add optimization for EnumerableSet (#2588)
+    
+    Co-authored-by: Reason <Reason@Lee.com> commit 82e3ec3afe695bf1e08fc983c696f3048fd63353 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Fri Mar 12 22:41:54 2021 +0100
+    Fix MerkleProof generation in tests and add some documentation (#2585) commit 682def9f898d0177aeb7b2567a4039af7aac4d6e Author: Evert0x 
+<35029353+Evert0x@users.noreply.github.com> Date: Thu Mar 11 17:28:26 2021 +0100
+    Typo in ERC20 constructor docstring (#2581) commit 96aece07f359867f00bba5e3ba1ff78e15479c5e Author: Ross Campbell 
+<41117279+Ro5s@users.noreply.github.com> Date: Wed Mar 10 17:48:22 2021 -0500
+    Fix docs formatting in IERC20Permit (#2579)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 508a879ef0590314188a5a93e15ccee03918ecca Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Wed Mar 10 14:30:16 2021 -0300
+    Remove merkleTree.js in favor of merkletreejs dependency (#2578) commit 5171e46c47bd6be781aa92315944ca37126d4a73 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Wed Mar 10 16:24:12 2021 +0100
+    Add an internal _useNonce(address) function in ERC20Permit (#2565) commit 1ee939e7c4b2c1fe84e6f5b6a7c1ce5e7d91667f Author: Hadrien 
+Croubois <hadrien.croubois@gmail.com> Date: Tue Mar 9 15:38:49 2021 +0100
+    4.0.0-rc.0 commit 59f33c1cc1dd92b2104c9d9635a554c13effb060 Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Tue Mar 9 15:32:54 
+2021 +0100
+    remove extra changelog entry commit fb95a8b34bb34d797f5b1dcf64a7be5cce7219c4 Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: 
+Tue Mar 9 15:31:34 2021 +0100
+    move changelog entry to the appropriate section commit d104ced95308fac506fc84d27e7dc69483dbd584 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Tue Mar 9 15:21:58 2021 +0100
+    fix changelog format
+    
+    (cherry picked from commit 2658e01baa9ec326effc792d107df7bc4a9ddea8) commit 1fd54698ffe37689dcd91f27da69184d3ee820e8 Author: renovate[bot] 
+<29139614+renovate[bot]@users.noreply.github.com> Date: Mon Mar 8 22:11:26 2021 -0300
+    Update lockfile (#2573)
+    
+    Co-authored-by: Renovate Bot <bot@renovateapp.com> (cherry picked from commit 9612b891c9d2d1a5a10691e97bc397625019507a) commit 
+2658e01baa9ec326effc792d107df7bc4a9ddea8 Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Tue Mar 9 15:21:58 2021 +0100
+    fix changelog format commit 9612b891c9d2d1a5a10691e97bc397625019507a Author: renovate[bot] 
+<29139614+renovate[bot]@users.noreply.github.com> Date: Mon Mar 8 22:11:26 2021 -0300
+    Update lockfile (#2573)
+    
+    Co-authored-by: Renovate Bot <bot@renovateapp.com> commit 27fc83355012cbb3aeff16571cc9401e41717ee3 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Mon Mar 8 19:42:34 2021 +0100
+    Make ERC1155.uri public (#2576)
+    
+    (cherry picked from commit 5dbbda543537ede4253a5c1cfc6a9d3d84058191) commit 0b3e0d74b003166d3755897084f72dea8c1700d0 Author: Hadrien 
+Croubois <hadrien.croubois@gmail.com> Date: Mon Mar 8 21:06:54 2021 +0100
+    Further reorganisation of the repo (#2575)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> (cherry picked from commit f076ff5dbd72cce50529f43b0f0d5a026c2d6ade) commit 
+d75b4cf613218c13b3eee2c9e4bc0084fc60034a Author: Francisco Giordano <frangio.1@gmail.com> Date: Mon Mar 8 17:33:04 2021 -0300
+    Update changelog to list beta bugfix separately
+    
+    (cherry picked from commit 5aab6ff81bc7888a2a03421a4fef195c1ac31400) commit 5aab6ff81bc7888a2a03421a4fef195c1ac31400 Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Mon Mar 8 17:33:04 2021 -0300
+    Update changelog to list beta bugfix separately commit f076ff5dbd72cce50529f43b0f0d5a026c2d6ade Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Mon Mar 8 21:06:54 2021 +0100
+    Further reorganisation of the repo (#2575)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit b8ab763581f8705fec306903659200fe753b68c3 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Mon Mar 8 20:53:01 2021 +0100
+    Add IERC20Metadata with name, symbol and decimals (#2561)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 78a98211292c06556f429007397ae192c3b806be Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Mon Mar 8 20:44:31 2021 +0100
+    Mint ERC777 without reception ack (#2552) commit 5dbbda543537ede4253a5c1cfc6a9d3d84058191 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Mon Mar 8 19:42:34 2021 +0100
+    Make ERC1155.uri public (#2576) commit b1e0aa487da1f92c181b59bbed48139f223ca95f Author: Brandon Valosek <bvalosek@gmail.com> Date: Mon Mar 
+8 06:44:20 2021 -0600
+    Fix AccessControlEnumerable not tracking renounceRole (#2572)
+    
+    * Fix AccessControlEnumerable not tracking renounceRole
+    
+    * Updated changelog
+    
+    (cherry picked from commit 7adf0d88a0f75777ff11840efdac2513f968fb9c) commit 6505e28c400d6426b027f3d7e2faf3c64ab2aa2a Author: Julian M. 
+Rodriguez <56316686+julianmrodri@users.noreply.github.com> Date: Mon Mar 8 09:42:35 2021 -0300
+    removes invalid character in comments (#2571)
+    
+    (cherry picked from commit fc004c0ad23dff1a3cbd743522b9a5555ff89332) commit 7adf0d88a0f75777ff11840efdac2513f968fb9c Author: Brandon 
+Valosek <bvalosek@gmail.com> Date: Mon Mar 8 06:44:20 2021 -0600
+    Fix AccessControlEnumerable not tracking renounceRole (#2572)
+    
+    * Fix AccessControlEnumerable not tracking renounceRole
+    
+    * Updated changelog commit fc004c0ad23dff1a3cbd743522b9a5555ff89332 Author: Julian M. Rodriguez 
+<56316686+julianmrodri@users.noreply.github.com> Date: Mon Mar 8 09:42:35 2021 -0300
+    removes invalid character in comments (#2571) commit f07c39be8a97deef67064916cb23bdc8030b7353 Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Thu Mar 4 18:50:12 2021 -0300
+    Add ERC165 interface detection to AccessControl (#2562)
+    
+    Co-authored-by: Hadrien Croubois <hadrien.croubois@gmail.com> (cherry picked from commit 29ffe6f426730036a664e0ed2f5a114744e56585) commit 
+29ffe6f426730036a664e0ed2f5a114744e56585 Author: Francisco Giordano <frangio.1@gmail.com> Date: Thu Mar 4 18:50:12 2021 -0300
+    Add ERC165 interface detection to AccessControl (#2562)
+    
+    Co-authored-by: Hadrien Croubois <hadrien.croubois@gmail.com> commit ec63c604abf9be7b67738c74931132894bff829b Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Wed Mar 3 16:31:50 2021 +0100
+    Fix prepack script commit 69ca2ad6762539c5d8bdb3ab02dcdeb116cba2ef Author: Francisco Giordano <frangio.1@gmail.com> Date: Wed Mar 3 
+12:49:22 2021 -0300
+    Fix name of ERC721URIStorage contract in changelog
+    
+    (cherry picked from commit 3d587f30437df7c76165164c7e88218e50834221) commit 3d587f30437df7c76165164c7e88218e50834221 Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Wed Mar 3 12:49:22 2021 -0300
+    Fix name of ERC721URIStorage contract in changelog commit ae1e384a9a11e9af8910ebf8a10d534a83cd41f9 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Wed Mar 3 16:31:50 2021 +0100
+    Fix prepack script
+    
+    (cherry picked from commit 10c52439dd5118d4b671e12d691bfde42c987fb9) commit 954f6110d6e66d0c020aa5721dc49b07eb576d06 Author: Hadrien 
+Croubois <hadrien.croubois@gmail.com> Date: Wed Mar 3 16:23:38 2021 +0100
+    4.0.0-beta.1 commit 4390b8df123afa31ef63fa7cdca6030ff4c1a470 Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Wed Mar 3 
+16:13:09 2021 +0100
+    Add ERC721URIStorage extension (#2555)
+    
+    (cherry picked from commit 1705067e650a62e7f3f74909236511c1e1d472b8) commit cb88e15b333f40f3fe19bb3b5662f5f1c9d2b7e4 Author: Hadrien 
+Croubois <hadrien.croubois@gmail.com> Date: Wed Mar 3 16:01:54 2021 +0100
+    Enable optimizations when publishing package (#2557)
+    
+    (cherry picked from commit 618a73581677b6f9563d3a97fc4bbe93e8dcbd8f) commit 1705067e650a62e7f3f74909236511c1e1d472b8 Author: Hadrien 
+Croubois <hadrien.croubois@gmail.com> Date: Wed Mar 3 16:13:09 2021 +0100
+    Add ERC721URIStorage extension (#2555) commit 618a73581677b6f9563d3a97fc4bbe93e8dcbd8f Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Wed Mar 3 16:01:54 2021 +0100
+    Enable optimizations when publishing package (#2557) commit 136de910493370472d4ab41e79261214b018f8a1 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Wed Mar 3 12:31:33 2021 +0100
+    Rename variable master to implementation #2 (#2553)
+    
+    (cherry picked from commit 103ff8e23d661972711245f814026b8812762f11) commit 103ff8e23d661972711245f814026b8812762f11 Author: Hadrien 
+Croubois <hadrien.croubois@gmail.com> Date: Wed Mar 3 12:31:33 2021 +0100
+    Rename variable master to implementation #2 (#2553) commit e2bf45f2622f1482e974ac54db57cca98407547a Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Tue Mar 2 21:25:56 2021 -0300
+    Rename variable master to implementation
+    
+    (cherry picked from commit cdb929aada14e391576f9fddbe613e026d1abc6b) commit cdb929aada14e391576f9fddbe613e026d1abc6b Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Tue Mar 2 21:25:56 2021 -0300
+    Rename variable master to implementation commit 93d990c6530ba1038854490caf7b80c24391229e Author: Francisco Giordano <frangio.1@gmail.com> 
+Date: Tue Mar 2 17:29:05 2021 -0300
+    Optimize constructor of ERC777 (#2551)
+    
+    (cherry picked from commit 62af16b9f258983b6451b415f28bc3d39c3af22c) commit 62af16b9f258983b6451b415f28bc3d39c3af22c Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Tue Mar 2 17:29:05 2021 -0300
+    Optimize constructor of ERC777 (#2551) commit 3dfd02b4b4550d31401e972a31dbd99b273d91c3 Author: Francisco Giordano <frangio.1@gmail.com> 
+Date: Tue Mar 2 15:51:06 2021 -0300
+    Fix link to TimelockController
+    
+    (cherry picked from commit ba1d773176f87b8495b90f297d6f317b0b531f16) commit 7a7bd8f6d7784a825ecb7cbf79be114acbcb053a Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Tue Mar 2 15:32:10 2021 -0300
+    Fix typo Controler -> Controller
+    
+    (cherry picked from commit 583146f9d619de11ffe9705b61ec3729bfefe3b2) commit 16312fcfb9b4e7bcfa3235b8aac770521a91376c Author: Hadrien 
+Croubois <hc@iex.ec> Date: Tue Mar 2 15:20:59 2021 +0100
+    Rename UpgradeableProxy to ERC1967Proxy (#2547)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> (cherry picked from commit c789941d76dd713333bdeafe5b4484f6d9543c4e) commit 
+a81a88cca0ef9e86cb613077381df19d1ba5f135 Author: Franco Victorio <victorio.franco@gmail.com> Date: Tue Mar 2 05:24:37 2021 -0300
+    Fix mentions of buidler (#2548)
+    
+    (cherry picked from commit 232c355b3ab6c14b8eb6c8127376995dcba8bf3e) commit 5acedf5027a81f604c9d5dc2cf7b101bf79525ae Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Mon Mar 1 14:37:22 2021 -0300
+    Change title of meta transactions page in docs sidebar
+    
+    (cherry picked from commit 773c7265e8725c87a8220c2de111c7e252becc8b) commit 566c601d417c0c7c00da7a3dc73a9a594fcd70f2 Author: renovate[bot] 
+<29139614+renovate[bot]@users.noreply.github.com> Date: Mon Mar 1 14:02:18 2021 -0300
+    Update lockfile (#2546)
+    
+    Co-authored-by: Renovate Bot <bot@renovateapp.com> (cherry picked from commit 742c436d2836b373f8b2593c3ccb658fb1876dd5) commit 
+ba1d773176f87b8495b90f297d6f317b0b531f16 Author: Francisco Giordano <frangio.1@gmail.com> Date: Tue Mar 2 15:51:06 2021 -0300
+    Fix link to TimelockController commit 583146f9d619de11ffe9705b61ec3729bfefe3b2 Author: Francisco Giordano <frangio.1@gmail.com> Date: Tue 
+Mar 2 15:32:10 2021 -0300
+    Fix typo Controler -> Controller commit c789941d76dd713333bdeafe5b4484f6d9543c4e Author: Hadrien Croubois <hc@iex.ec> Date: Tue Mar 2 
+15:20:59 2021 +0100
+    Rename UpgradeableProxy to ERC1967Proxy (#2547)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 232c355b3ab6c14b8eb6c8127376995dcba8bf3e Author: Franco Victorio 
+<victorio.franco@gmail.com> Date: Tue Mar 2 05:24:37 2021 -0300
+    Fix mentions of buidler (#2548) commit 773c7265e8725c87a8220c2de111c7e252becc8b Author: Francisco Giordano <frangio.1@gmail.com> Date: Mon 
+Mar 1 14:37:22 2021 -0300
+    Change title of meta transactions page in docs sidebar commit 742c436d2836b373f8b2593c3ccb658fb1876dd5 Author: renovate[bot] 
+<29139614+renovate[bot]@users.noreply.github.com> Date: Mon Mar 1 14:02:18 2021 -0300
+    Update lockfile (#2546)
+    
+    Co-authored-by: Renovate Bot <bot@renovateapp.com> commit 15214a53ce3bd6fe04396963b0b5fecdb32047a4 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Wed Feb 24 23:07:03 2021 +0100
+    Optimize implementation of ERC20Capped (#2524)
+    
+    (cherry picked from commit 36b855972b05ce30326b954c295936e11321baaf) commit 36b855972b05ce30326b954c295936e11321baaf Author: Hadrien 
+Croubois <hadrien.croubois@gmail.com> Date: Wed Feb 24 23:07:03 2021 +0100
+    Optimize implementation of ERC20Capped (#2524) commit d5f4862405fb154acf7889766a631e61289b0cec Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Wed Feb 24 00:35:47 2021 -0300
+    Fix package.json files field
+    
+    (cherry picked from commit 735c03fcf31cb4fde0fc739e187cbc8b5381a7f5) commit 735c03fcf31cb4fde0fc739e187cbc8b5381a7f5 Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Wed Feb 24 00:35:47 2021 -0300
+    Fix package.json files field commit 4a1985f8700476e012564d86ebfe531639bf63c9 Author: Francisco Giordano <frangio.1@gmail.com> Date: Tue 
+Feb 23 23:50:40 2021 -0300
+    Fix migrate-imports.js test for upgradeable paths
+    
+    (cherry picked from commit 4519c237c501a7be9f28db0c75aef490fbbddda5) commit 4519c237c501a7be9f28db0c75aef490fbbddda5 Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Tue Feb 23 23:50:40 2021 -0300
+    Fix migrate-imports.js test for upgradeable paths commit ac8279a0a5472e031b5e87528336f41fa29640d5 Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Tue Feb 23 23:31:48 2021 -0300
+    Update Antora component version commit 7cab19a2e4a89019f01073066c3d79f24559c472 Author: Francisco Giordano <frangio.1@gmail.com> Date: Tue 
+Feb 23 23:29:43 2021 -0300
+    Check upgradeable paths in migrate-imports test
+    
+    (cherry picked from commit 4ee9fd77fd518028abbabbab6940671dba766e6a) commit 4ee9fd77fd518028abbabbab6940671dba766e6a Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Tue Feb 23 23:29:43 2021 -0300
+    Check upgradeable paths in migrate-imports test commit 556cdf5f1ac86912c6a90535dd8a6c904311ec67 Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Mon Feb 22 17:44:21 2021 -0300
+    4.0.0-beta.0 commit c760fe9a2e2a3dd697ae3e07332f5c0fad894c72 Author: Francisco Giordano <frangio.1@gmail.com> Date: Mon Feb 22 17:44:02 
+2021 -0300
+    Update package-lock.json commit 24a0bc23cfe3fbc76f8f2510b78af1e948ae6651 Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Mon 
+Feb 22 17:44:16 2021 +0100
+     Reorganize the repo structure (#2503)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit c3178ff942f9f487b9fda2c648aa19e633560adb Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Fri Feb 19 18:17:42 2021 -0300
+    Add message to caution that SafeMath.sol is for Solidity 0.8 commit f8cc8b844a9f92f63dc55aa581f7d643a1bc5ac1 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Fri Feb 19 19:36:48 2021 +0100
+    Minimal support for ERC2771 (GSNv2) (#2508)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit e341bdc1b741b8f21a73ffbdffad7cb5aaa0e9a2 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Fri Feb 19 18:36:56 2021 +0100
+    Remove enumerable from AccessControl and add AccessControlEnumerable extension (#2512)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 09734e80287c0095eafb5d5b18706fc137846f71 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Fri Feb 19 17:24:39 2021 +0100
+    Remove enumerable from ERC721 and add an ERC721Enumerable extension (#2511)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 7d20d0e2d21919c75d54bb856bd8441d0811d734 Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Fri Feb 19 11:11:54 2021 -0300
+    Use immutable variables where possible (#2528)
+    
+    Co-authored-by: rotciv <victorfage@gmail.com> Co-authored-by: Hadrien Croubois <hadrien.croubois@gmail.com> commit 
+0059b17dfc1e2226ca1a1c3b5e7a56817c32d47d Author: Francisco Giordano <frangio.1@gmail.com> Date: Thu Feb 18 20:53:00 2021 -0300
+    Remove _isConstructor() check in initializer modifier (#2531)
+    
+    * Remove _isConstructor() check in initializer modifier
+    
+    * add changelog entry commit e733b24dfe530bb5f669c749d8b7bcff49c8ae88 Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Thu Feb 
+18 20:02:28 2021 +0100
+     Refactor ERC165 to use function overriding instead of storage (#2505)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit f7c8252611d0a507408df2d768ebec8a8620c4df Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Thu Feb 18 16:27:18 2021 +0100
+    Remove GSNv1 contracts (#2521)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit e66e3ca523c20b6676fc8cff57b76a175c12c6ce Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Thu Feb 18 16:19:57 2021 +0100
+    Improve gas efficiency of EnumerableMap (#2518)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 24660c3e48a71041ee3a4424d6e448b047926294 Author: Luiz Hamilton Soares 
+<luizhamilton29@gmail.com> Date: Wed Feb 17 09:34:39 2021 -0300
+    Fix keccak256 typo (#2525) commit ee6348a7a0b08f82344f2b61e903788aa9dcf36c Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Tue 
+Feb 9 17:25:41 2021 +0100
+    change CHANGELOG indentation for consistency commit a44303c373f58c43c4910b78eb6f0a84248a52fd Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Tue Feb 9 16:58:23 2021 +0100
+    Remove double sload when doing math checks in tokens (#2506)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit f49e9ee41b2d3408582b0b9e3de4e40602981843 Author: renovate[bot] 
+<29139614+renovate[bot]@users.noreply.github.com> Date: Tue Feb 9 11:59:35 2021 -0300
+    Update lockfile (#2493)
+    
+    Co-authored-by: Renovate Bot <bot@renovateapp.com> commit 1ba03b164ad48bb84c2842023fc172083f6b0073 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Tue Feb 9 01:42:35 2021 +0100
+    Add support for eth-gas-reporter (#2501)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 9c1e7039901d948eae386184e7ad5644b62efa87 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Mon Feb 8 21:55:56 2021 +0100
+    Add a Strings.toHexString function (#2504)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit f2112be4d8e2b8798f789b948f2a7625b2350fe7 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Thu Feb 4 21:28:13 2021 +0100
+    Add revert string to Counter decrement overflow (#2500) commit c82895fb655d75709ae2953dc5238947250eb24a Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Thu Feb 4 17:14:50 2021 -0300
+    Fix codecov reports commit b840341a77de76f5869ab15c9eb1204c26983880 Author: Hadrien Croubois <hc@iex.ec> Date: Thu Feb 4 20:06:00 2021 
++0100
+     Remove the storage associated with decimals (#2502)
+    
+    * Removing the storage associated with decimals
+    
+    * changelog entry
+    
+    * changelog link to new issue number
+    
+    * Update contracts/token/ERC20/ERC20.sol
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com>
+    
+    * Update contracts/token/ERC20/ERC20.sol
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com>
+    
+    * Update CHANGELOG.md
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com>
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit ed7623273aae682520b099f8c7c05c9be6793209 Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Thu Feb 4 14:22:19 2021 -0300
+    Fix prepare-docs-solc.js for Hardhat commit 9425a7e0ab1d45c48845d47afc33856ad9d98b0c Merge: e2861562 93438eca Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Tue Feb 2 22:09:59 2021 +0100
+    Merge branch 'solc-0.8'
+    
+    Conflicts: CHANGELOG.md package-lock.json test/math/SafeMath.test.js commit 93438eca0bdde2b023aafa803c86ccf50a2f0c2c Author: Hadrien 
+Croubois <hadrien.croubois@gmail.com> Date: Tue Feb 2 22:07:56 2021 +0100
+    Merge 3.4 master into solc-0.8 (#2499)
+    
+    * 3.4.0-rc.0
+    
+    * Allow manual dispatch of Test CI job
+    
+    * Update lockfile (#2481)
+    
+    Co-authored-by: Renovate Bot <bot@renovateapp.com>
+    
+    * Add "available since" comments in documentation
+    
+    * Add "available since" comments in documentation
+    
+    (cherry picked from commit 63a0343dda0b553319a799c63e4fa23f2f3737da)
+    
+    * Remove SafeMathMock compilation warnings (#2497)
+    
+    * Remove SafeMathMock compilation warnings (#2497)
+    
+    (cherry picked from commit f4e57fd52931e5f434bc382506af959351b5598d)
+    
+    * 3.4.0
+    
+    * fix safemath test to use renamed function from the mock
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com> 
+    Co-authored-by: Renovate Bot <bot@renovateapp.com>
+commit e28615628bf124d95680fd7439e36edf4b1c92fe Merge: f4e57fd5 fa64a1ce Author: Francisco Giordano <frangio.1@gmail.com> Date: Tue Feb 2 
+16:16:16 2021 -0300
+    Merge branch 'release-v3.4' commit fa64a1ced0b70ab89073d5d0b6e01b0778f7e7d6 Author: Francisco Giordano <frangio.1@gmail.com> Date: Tue Feb 
+2 16:15:12 2021 -0300
+    3.4.0 commit 0f553e7f9ea933734ec63772229c708f30faaf0b Author: Francisco Giordano <frangio.1@gmail.com> Date: Tue Feb 2 11:46:23 2021 -0300 
+    Remove SafeMathMock compilation warnings (#2497)
+    
+    (cherry picked from commit f4e57fd52931e5f434bc382506af959351b5598d) commit f4e57fd52931e5f434bc382506af959351b5598d Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Tue Feb 2 11:46:23 2021 -0300
+    Remove SafeMathMock compilation warnings (#2497) commit a0e2bca79a45cbcd889b87ba9da2016c2e0d2948 Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Mon Feb 1 21:44:58 2021 -0300
+    Add "available since" comments in documentation
+    
+    (cherry picked from commit 63a0343dda0b553319a799c63e4fa23f2f3737da) commit 63a0343dda0b553319a799c63e4fa23f2f3737da Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Mon Feb 1 21:44:58 2021 -0300
+    Add "available since" comments in documentation commit 5db74138278f423e764872339a8b1dba03c7bac8 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Mon Feb 1 11:00:16 2021 +0100
+    re-enabling safemath revert reasons in ERC20, ERC777 and ERC1155 (#2491)
+    
+    * re-enabling safemath revert reasons in ERC20 and ERC1155
+    
+    * adding revert messages to ERC777
+    
+    * removing uncheck block commit d163aeb80d0b7b5f51092449c76aa1071d858f3d Author: renovate[bot] 
+<29139614+renovate[bot]@users.noreply.github.com> Date: Fri Jan 29 19:41:00 2021 -0300
+    Update lockfile (#2481)
+    
+    Co-authored-by: Renovate Bot <bot@renovateapp.com> commit 60205944bbaf236c4591e905aaffdc770a906555 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Fri Jan 29 22:20:49 2021 +0100
+    Adopt new Solidity features interfaceId, try/catch, keccak constants (#2487)
+    
+    * Clean code
+    
+    - using type().interfaceId to improve readeability of ERC165 registration - hardcoding some keccak256 that are otherwise computed at 
+    construction.
+    
+    * hardcode keccak256 result
+    
+    * Improve code readeability using try/catch
+    
+    * Remove hardcoded hash
+    
+    tests show that solc 0.8.0 does the optimization as expected
+    
+    * Use try/catch to improve readability
+    
+    * ERC165Checker: Do not revert when returndata is empty + new test
+    
+    * Address PR comments
+    
+    * improve testing of ERC721Receiver errors
+    
+    * put back comment about invalid interface id
+    
+    * coverage does not support 0.8.1. Reverting back to 0.8.0
+    
+    * bubble all data with length > 0 if onERC721Receive fails.
+    
+    * Fix test: revert without message trigger is bubble with the default message
+    
+    * using enum object to improve readability commit 03832c130c7855138a18b07904eaeac4e6964426 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Fri Jan 29 16:51:51 2021 +0100
+    Make Context._msgData return "bytes calldata" (#2492) commit 9f93e25b8816f0fc46e1976a713fe7887321c14c Merge: 974c5342 afaebc38 Author: 
+Francisco Giordano <frangio.1@gmail.com> Date: Wed Jan 27 18:36:46 2021 -0300
+    Merge branch 'solc-0.7' into 'solc-0.8' commit afaebc3869e4d7c40327ec1c4cffd309ee56e3b8 Author: Francisco Giordano <frangio.1@gmail.com> 
+Date: Wed Jan 27 18:17:13 2021 -0300
+    Disable solhint until Solidity 0.8 supported commit fdf57a9788225cb64dd1ab7ab9286bfb0f3a37f4 Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Wed Jan 27 18:14:07 2021 -0300
+    Lint commit 5609cd4c74dda60b01d0eacc7989428be6496781 Author: Francisco Giordano <frangio.1@gmail.com> Date: Wed Jan 27 18:04:21 2021 -0300 
+    Fix merge errors
+commit a0323d446ce681749694fabf9f528fd043da24c0 Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Wed Jan 27 11:33:54 2021 +0100 
+    Transition from buidler to hardhat
+commit 0db76e98f90550f1ebbb3dea71c7d12d5c533b5c Merge: 974c5342 fa33fbce Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Wed Jan 
+27 11:16:05 2021 +0100
+    Merge branch 'solc-0.7' into solc-0.8 commit fa33fbce75a223725bbd70ab2a4efcc42ea221ed Author: Francisco Giordano <frangio.1@gmail.com> 
+Date: Tue Jan 26 18:20:33 2021 -0300
+    Allow manual dispatch of Test CI job
+    
+    (cherry picked from commit bcc7192af7406f6acd75a7c9c45eb9cf36650fab) commit bcc7192af7406f6acd75a7c9c45eb9cf36650fab Author: Francisco 
+Giordano <frangio.1@gmail.com> Date: Tue Jan 26 18:20:33 2021 -0300
+    Allow manual dispatch of Test CI job commit 0d27b7a7ff1dabd6d0022495872f42dc421c2c55 Author: Francisco Giordano <frangio.1@gmail.com> 
+Date: Tue Jan 26 18:15:44 2021 -0300
+    Add package-lock.json commit 6d202894b6df150054862457b43547e75111cf61 Merge: b8187aa5 18c7efe8 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Tue Jan 26 18:58:15 2021 +0100
+    Merge branch 'master' commit ff300b10e1c659ac4b5690e00e7a4f883dc0b430 Author: Francisco Giordano <frangio.1@gmail.com> Date: Tue Jan 26 
+13:31:55 2021 -0300
+    3.4.0-rc.0 commit 18c7efe800df6fc19554ece3b1f238e9e028a1db Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Tue Jan 26 17:23:23 
+2021 +0100
+    Make view and pure functions virtual (#2473)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 0931062a3f08a22f3b20a435d2a4856fd07a6421 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Tue Jan 26 17:07:19 2021 +0100
+    Use Address.sendValue instead of address.transfer in RefundEscrow (#2480)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 3b4c951838ddf82f4d2b44ae7c967f0573039f28 Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Tue Jan 26 10:57:18 2021 -0300
+    Fix ERC777 potential reentrancy issues (#2483) commit c2c08af16d636343edfd0e80aceb5a031ee7a55f Author: Conspyrosy 
+<1027439+conspyrosy@users.noreply.github.com> Date: Tue Jan 19 20:55:22 2021 +0000
+    Add ERC165Checker.getSupportedInterfaces (#2469)
+    
+    Co-authored-by: conspyrosy <1027439+Spyros-Stylianou@users.noreply.github.com> Co-authored-by: kamiebisu <kamiebisu@protonmail.com> 
+    Co-authored-by: Hadrien Croubois <hadrien.croubois@gmail.com> Co-authored-by: Francisco Giordano <frangio.1@gmail.com>
+commit 9e49be41b6028f6ae17d244308a4a98e2e91c703 Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Tue Jan 19 21:54:47 2021 +0100 Add 
+    ERC1167 library (minimal proxy) (#2449)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit dd86c97e18877e0db9e94965bcd10c76151d755f Author: Francisco Giordano 
+<frangio.1@gmail.com> Date: Tue Jan 19 14:56:17 2021 -0300
+    Fix scripts/prepare-docs.sh commit 5a8e6bda511fdb147e72e372f6684ceaee53debc Author: Francisco Giordano <frangio.1@gmail.com> Date: Tue Jan 
+19 13:41:00 2021 -0300
+    Update pull request template commit c34211417cec0d2bdf68410ade9bce1d962ccaf0 Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: 
+Mon Jan 18 22:06:27 2021 +0100
+    Refactor SafeMath to avoid memory leaks (#2462)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 974c534210ab3347bdaa45f0f07cfe298a8a6866 Author: Andre Korol 
+<andrekorol@users.noreply.github.com> Date: Thu Jan 14 22:38:53 2021 +0000
+    Update contracts to support Solidity 0.8.x (#2442)
+    
+    Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 5a58fd2de01ac4292510a9f0b30d52a9b4ef8ecd Author: renovate[bot] 
+<29139614+renovate[bot]@users.noreply.github.com> Date: Wed Jan 13 21:06:06 2021 -0300
+    Update lockfile (#2467)
+    
+    Co-authored-by: Renovate Bot <bot@renovateapp.com> commit faec973e09af21c57e22efdd0229486118476835 Author: Hadrien Croubois 
+<hadrien.croubois@gmail.com> Date: Wed Jan 13 22:25:39 2021 +0100
+    Make non-view functions virtual (#2468) commit 65b7e515a2a8bcb6b6530d2ea5b403ff4ef17523 Author: Bill Hsu <bl33234679@gmail.com> Date: Tue 
+Jan 12 03:43:45 2021 +0800
+    Align comments (#2458) commit 318c4b44eaba2d745ed4a6381c43e03edc53634d Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Thu Jan 
+7 17:04:13 2021 +0100
+    Move Context from GSN to utils directory (#2453)
+    
+    Co-authored-by: Hadrien Croubois <hadrien@openzeppelin.com> Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 
+b6e5187973a4f12ce5ea0bba3500ffb30efb2389 Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Thu Jan 7 17:03:20 2021 +0100
+    Use Address.sendValue for PaymentSplitter (#2456)
+    
+    * use Address.sendValue instead of .transfer
+    
+    * changelog entry
+    
+    Co-authored-by: Hadrien Croubois <hadrien@openzeppelin.com> Co-authored-by: Francisco Giordano <frangio.1@gmail.com> commit 
+1e8cb4b4a401dc9666be1fc45eeed48bcf32dbe4 Author: Hadrien Croubois <hadrien.croubois@gmail.com> Date: Thu Jan 7 16:45:36 2021 +0100
+    Bubble revert reasons in proxy initialization (#2454)
+    
+    Co-authored-by: Hadrien Croubois <hadrien@openzeppelin.com> commit 9daa0d4d2fadc594d6756a83648c80007276ac04 Author: renovate[bot] 
+<29139614+renovate[bot]@users.noreply.github.com>
