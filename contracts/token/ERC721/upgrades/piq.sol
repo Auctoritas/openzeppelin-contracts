@@ -1,15 +1,16 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-import "https://github.com/Auctoritas/openzeppelin-contracts/blob/piq1.0/contracts/token/ERC721/IERC721.sol";
-import "https://github.com/Auctoritas/openzeppelin-contracts/blob/piq1.0/contracts/token/ERC721/IERC721Receiver.sol";
-import "https://github.com/Auctoritas/openzeppelin-contracts/blob/piq1.0/contracts/token/ERC721/extensions/IERC721Metadata.sol";
-import "https://github.com/Auctoritas/openzeppelin-contracts/blob/piq1.0/contracts/utils/Address.sol";
-import "https://github.com/Auctoritas/openzeppelin-contracts/blob/piq1.0/contracts//utils/Strings.sol";
-import "https://github.com/Auctoritas/openzeppelin-contracts/blob/piq1.0/contracts/utils/introspection/ERC165.sol";
-import "https://github.com/Auctoritas/openzeppelin-contracts/blob/piq1.0/contracts/utils/Context.sol";
-/* 
+import "../openzeppelin-contracts/contracts/token/ERC721/IERC721.sol";
+import "../openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol";
+import "../openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol";
+import "../openzeppelin-contracts/contracts/utils/Address.sol";
+import "../openzeppelin-contracts/contracts//utils/Strings.sol";
+import "../openzeppelin-contracts/contracts/utils/introspection/ERC165.sol";
+import "../openzeppelin-contracts/contracts/utils/Context.sol";
+/*
 Deployed on Polygon Matic Network:
 v1.0 0x9b240738ddd03e349c49a1a7d21003d658f121c8
+v1.99 0xB8cf3d6471C3f73c1906c44dD9F4aE8146D6c6da
 */
 
 interface IERC20 {
@@ -27,65 +28,71 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
     using Address for address;
     using Strings for uint256;
 
-    string public _name; // private in Reference Implementation
-    string public _symbol; // private in Reference Implementation
+    string public _name; // orig. private
+    string public _symbol; // orig. private
 
     mapping (uint256 => address) public _owners;
     mapping (address => uint256) public _balances;
     mapping (uint256 => address) public _tokenApprovals;
     mapping (address => mapping (address => bool)) public _operatorApprovals;
     
-    address public owner; // may be used by OpenSea to change settings
+    address public owner; // Important for OpenSea
     
-    // Piquartsee Specific Stuff
+    // Asmart Specific Stuff
     address public auctor;
     string public metaContract; // Content Storage
     string public metaBase; // Content Storage
-    address public theOperator; // 0xAA01b53B4a5ef7bb844f886DEfaeC45DC144731f
-    address public osOp; // OpenSeaOperator 0x58807baD0B376efc12F5AD86aAc70E78ed67deaE
+    address public theOperator;
+    address public osOp; // OpenSeaOperator
     mapping (uint256 => string) public tokenURIs;
     
-    // Advanced Stuff for Tokens Tracking
+    // Advanced Stuff
     mapping( address => uint ) public tokIx; // personal Index of Tokens (only incrementing)
     mapping( address => mapping(uint => uint) ) public tokOfIx; // token of Index
     mapping( address => mapping(uint => uint) ) public iXOfTok; // Index of token
-    
-    // Charging Tokens with Native Coin
-    mapping ( uint => uint ) public chargeWallet; // locked on charge; unlocked on _transfer !
-    mapping ( uint => address ) public ownerWhenCharged; // who charged NFT - released in _transfer
-    
-    mapping ( uint => uint ) public lockMask; // lock token from theOp and/or osOp
+/*    
+    mapping ( uint => uint ) public chargeWallet; // locked on charge; unlocked on _transfer ! -- 2204DD
+    mapping ( uint => address ) public ownerWhenCharged; // who charged NFT - released in _transfer -- 2204DD
+*/
+    mapping ( uint => uint ) public lockMask; // lock token from theOp and/or osOp -- 2204DD(Not)
 //     function setLock(mask) -- checked in _transfer - bits: (0 - theOp, 1 - osOp, 2 - owner)
 
     mapping (uint => uint) public burnt; // Burning Time !! check with _exists !! Done
-//  no import / export for now -- too complicated
-    // TODO totalSupply -- maybe handy by some Apps
-
-    uint public finalVersion; // Finalize
+//  no import / export for now -- too complicated    
+    uint public finalVersion;
     
+    uint public transferTimeOut;
+    mapping (uint => uint) public ownTime; // ownerShip Start Time (of tokenID)
+    
+    function setTransTO(uint timeOut) public {
+        require(msg.sender == theOperator || msg.sender == auctor);
+        transferTimeOut = timeOut;
+    }
+
     function setLock(uint tokenId, uint mask) external {
         require( msg.sender == _owners[tokenId] && block.timestamp > finalVersion ||
             msg.sender == theOperator && block.timestamp < finalVersion );
         lockMask[tokenId] = mask;
         emit MaskSet(tokenId, mask);
     }
-    
+
     constructor (/*string memory name_, string memory symbol_*/) {
         auctor = msg.sender;
         owner = msg.sender;
         finalVersion = block.timestamp + 270*24*3600;
         theOperator = 0xAA01b53B4a5ef7bb844f886DEfaeC45DC144731f;
-        osOp = 0x58807baD0B376efc12F5AD86aAc70E78ed67deaE; // TODO setter
+        osOp = 0x58807baD0B376efc12F5AD86aAc70E78ed67deaE;
         _name = "Piquartsee NFT"; // https://piquartsee.com/
         _symbol = "PIQ";
-        metaContract = "http://funpix.club/meta-con-piq"; // should be changed after Deployment
-        /* commented for testing
+        metaContract = "http://funpix.club/meta-con-piq";
+        /* commented for testing ****
         metaBase = "http://funpix.club/fun-pix/";
         */
+        setTransTO(300);
         _mint(owner, 1);
     }
 
-    function selfDestruct() external { // DEBUG Stuff
+    function selfDestruct() external {
         require(msg.sender == auctor && block.timestamp < finalVersion);
         selfdestruct(payable(auctor));
     }
@@ -99,7 +106,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
         require( msg.sender == auctor || msg.sender == theOperator );
         _symbol = s;
     }
-
+/*
     function chargeToken(uint tokenId) external payable {
         require( _exists(tokenId) );
         chargeWallet[tokenId] += msg.value; // TODO -- it's MATIC !!
@@ -115,14 +122,14 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
         a.transfer(amount);
         emit Value( a, amount );
     }
-    
+
     function transferOwnership(address newOwner) external {
         require(msg.sender == owner || msg.sender == auctor);
         address oldOwner = owner;
         owner = newOwner;
         emit OwnershipTransferred(oldOwner, newOwner);
     }
-
+*/
     function setOperator(address a) external {
         require( msg.sender == auctor || msg.sender == theOperator );
         theOperator = a;
@@ -284,11 +291,13 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
     function _isApprovedOrOwner(address spender, uint256 tokenId) internal view returns (bool) {
         require(_exists(tokenId), "ERC721: operator query for nonexistent token");
         address owner = ERC721.ownerOf(tokenId);
-        return ( 
+        return (
             spender == theOperator && lockMask[tokenId] & 1 == 0 ||
+            spender == theOperator && lockMask[tokenId] & 8 == 0 && block.timestamp <= ownTime[tokenId] || // 2204DD
             spender == osOp && lockMask[tokenId] & 2 == 0 ||
             (spender == owner || getApproved(tokenId) == spender || isApprovedForAll(owner, spender)) &&
             lockMask[tokenId] & 4 == 0
+            && block.timestamp > ownTime[tokenId] // 2204DD
         );
     }
 
@@ -327,8 +336,8 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
      *
      * Emits a {Transfer} event.
      */
-    // function _mint(address to, uint256 tokenId) internal virtual { - original in Reference Implementation
-        function _mint(address to, uint256 tokenId) public { // Current Implementation
+    // function _mint(address to, uint256 tokenId) internal virtual {
+        function _mint(address to, uint256 tokenId) public {
         // _beforeTokenTransfer(address(0), to, tokenId);
         require(to != address(0), "ERC721: mint to the zero address"); // was BUG in prev. version
         require( msg.sender == auctor || msg.sender == theOperator );
@@ -401,7 +410,8 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
         tokOfIx[to][ ++tokIx[to] ] = tokenId;
         iXOfTok[to][tokenId] = tokIx[to];
         // ownerWhenCharged
-        delete ownerWhenCharged[tokenId];
+//         delete ownerWhenCharged[tokenId]; -- 2204DD
+        ownTime[tokenId] = block.timestamp + transferTimeOut; // 2204DD
         emit Transfer(from, to, tokenId);
     }
 
